@@ -2,8 +2,8 @@ from kfp.v2 import compiler
 from kfp.v2.dsl import pipeline, component, Artifact, Dataset, Input, Metrics, Model, Output, OutputPath
 
 
-PROJECT_ID = "marvik-vertex-tutorial"
-BUCKET_NAME = "gs://marvik-vertex-tutorial/"
+PROJECT_ID = "YOUR_PROJECT_ID"
+BUCKET_NAME = "gs://YOUR_BUCKET_NAME/"
 PIPELINE_ROOT = f"{BUCKET_NAME}pipeline_root/"
 
 
@@ -19,7 +19,7 @@ def get_dataframe(
 ):
     from google.cloud import bigquery
 
-    bqclient = bigquery.Client(project="marvik-vertex-tutorial")
+    bqclient = bigquery.Client(project="YOUR_PROJECT")
 
     job_config = bigquery.QueryJobConfig(
         query_parameters=[

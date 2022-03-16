@@ -17,8 +17,8 @@ if __name__ == "__main__":
         ["OBSCENITY", "RESIDENCE", "false"]
     ]
     endpoint_predict_sample(
-        project="346590416306",
-        endpoint="1937295507676200960",
-        location="us-central1",
+        project="YOUR_PROJECT_ID",
+        endpoint="YOUR_ENDPOINT_ID",
+        location="YOUR_REGION",
         instances=instances_to_test
     )

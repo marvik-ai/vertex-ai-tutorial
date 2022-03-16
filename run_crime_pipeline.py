@@ -2,7 +2,7 @@ if __name__ == "__main__":
     from datetime import datetime
     from google.cloud import aiplatform
 
-    aiplatform.init(project="marvik-vertex-tutorial", staging_bucket="marvik-vertex-tutorial")
+    aiplatform.init(project="YOUR_PROJECT", staging_bucket="YOUR_BUCKET")
     TIMESTAMP = datetime.now().strftime("%Y%m%d%H%M%S")
 
     with open("./crime_query.sql", "r") as query_file:
